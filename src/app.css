@@ -1,0 +1,218 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+	--background: #0a0a0f;
+	--foreground: #e0e0e0;
+	--card: #111118;
+	--card-foreground: #e0e0e0;
+	--popover: #111118;
+	--popover-foreground: #e0e0e0;
+	--primary: #00ff88;
+	--primary-foreground: #000000;
+	--secondary: #1a1a2e;
+	--secondary-foreground: #00ff88;
+	--muted: #1a1a2e;
+	--muted-foreground: #888;
+	--accent: #ff00ff;
+	--accent-foreground: #000000;
+	--destructive: #ff3333;
+	--destructive-foreground: #ffffff;
+	--border: #2a2a3e;
+	--input: #1a1a2e;
+	--ring: #00ff88;
+	--radius: 0.5rem;
+	--neon-green: #00ff88;
+	--neon-pink: #ff00ff;
+	--neon-yellow: #ffff00;
+	--neon-cyan: #00ffff;
+	--neon-orange: #ff6600;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-destructive-foreground: var(--destructive-foreground);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--color-neon-green: var(--neon-green);
+	--color-neon-pink: var(--neon-pink);
+	--color-neon-yellow: var(--neon-yellow);
+	--color-neon-cyan: var(--neon-cyan);
+	--color-neon-orange: var(--neon-orange);
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+	--font-comic: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', cursive;
+	--font-pixel: 'Press Start 2P', monospace;
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		background: var(--background);
+		color: var(--foreground);
+		font-family: var(--font-comic);
+	}
+}
+
+/* Neon glow effects */
+.neon-text {
+	text-shadow:
+		0 0 7px var(--neon-green),
+		0 0 10px var(--neon-green),
+		0 0 21px var(--neon-green),
+		0 0 42px var(--neon-green);
+}
+
+.neon-pink-text {
+	text-shadow:
+		0 0 7px var(--neon-pink),
+		0 0 10px var(--neon-pink),
+		0 0 21px var(--neon-pink),
+		0 0 42px var(--neon-pink);
+}
+
+.neon-box {
+	box-shadow:
+		0 0 5px var(--neon-green),
+		0 0 10px var(--neon-green),
+		inset 0 0 5px rgba(0, 255, 136, 0.1);
+}
+
+.neon-pink-box {
+	box-shadow:
+		0 0 5px var(--neon-pink),
+		0 0 10px var(--neon-pink),
+		inset 0 0 5px rgba(255, 0, 255, 0.1);
+}
+
+/* Rainbow text animation */
+@keyframes rainbow {
+	0% { color: #ff0000; }
+	15% { color: #ff8800; }
+	30% { color: #ffff00; }
+	45% { color: #00ff88; }
+	60% { color: #00ffff; }
+	75% { color: #ff00ff; }
+	100% { color: #ff0000; }
+}
+
+.rainbow-text {
+	animation: rainbow 3s linear infinite;
+}
+
+/* Pulse glow animation */
+@keyframes pulse-glow {
+	0%, 100% {
+		box-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green);
+	}
+	50% {
+		box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+	}
+}
+
+.pulse-glow {
+	animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Shake animation for buttons */
+@keyframes wiggle {
+	0%, 100% { transform: rotate(0deg); }
+	25% { transform: rotate(-2deg); }
+	75% { transform: rotate(2deg); }
+}
+
+.wiggle:hover {
+	animation: wiggle 0.3s ease-in-out infinite;
+}
+
+/* Scanline overlay */
+.scanlines::after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: repeating-linear-gradient(
+		0deg,
+		transparent,
+		transparent 2px,
+		rgba(0, 0, 0, 0.05) 2px,
+		rgba(0, 0, 0, 0.05) 4px
+	);
+	pointer-events: none;
+	z-index: 9999;
+}
+
+/* Marquee */
+@keyframes scroll-left {
+	0% { transform: translateX(100%); }
+	100% { transform: translateX(-100%); }
+}
+
+.marquee {
+	animation: scroll-left 20s linear infinite;
+}
+
+/* Flicker */
+@keyframes flicker {
+	0%, 100% { opacity: 1; }
+	50% { opacity: 0.8; }
+	52% { opacity: 1; }
+	54% { opacity: 0.6; }
+	56% { opacity: 1; }
+}
+
+.flicker {
+	animation: flicker 4s linear infinite;
+}
+
+/* Floating sticker animations */
+@keyframes float1 {
+	0%, 100% { transform: translateY(0) rotate(0deg); }
+	25% { transform: translateY(-30px) rotate(5deg); }
+	50% { transform: translateY(10px) rotate(-3deg); }
+	75% { transform: translateY(-20px) rotate(7deg); }
+}
+
+@keyframes float2 {
+	0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+	33% { transform: translateY(-40px) rotate(-8deg) scale(1.05); }
+	66% { transform: translateY(20px) rotate(5deg) scale(0.95); }
+}
+
+@keyframes float3 {
+	0%, 100% { transform: translateY(0) translateX(0) rotate(0deg); }
+	20% { transform: translateY(-25px) translateX(10px) rotate(4deg); }
+	40% { transform: translateY(15px) translateX(-10px) rotate(-6deg); }
+	60% { transform: translateY(-35px) translateX(5px) rotate(8deg); }
+	80% { transform: translateY(10px) translateX(-5px) rotate(-3deg); }
+}
+
+/* Hide floating stickers on small screens to not obstruct content */
+@media (max-width: 1024px) {
+	.sticker-float {
+		display: none;
+	}
+}
