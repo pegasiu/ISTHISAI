@@ -18,15 +18,15 @@
   <!-- Marquee ticker -->
   <div class="overflow-hidden border-b border-[var(--neon-green)]/30 bg-[#0d0d15] py-2">
     <div class="marquee whitespace-nowrap text-sm" style="font-family: var(--font-pixel); font-size: 10px;">
-      <span class="text-[var(--neon-green)]">$ISTHISAI</span>
-      <span class="text-[var(--neon-pink)] mx-4">IS THIS AI OR IS THIS REAL?</span>
+      <span class="text-[var(--neon-green)]">$ISTHATREAL</span>
+      <span class="text-[var(--neon-pink)] mx-4">IS THAT REAL OR IS THAT AI?</span>
       <span class="text-[var(--neon-yellow)]">DETECT THE FAKE</span>
       <span class="text-[var(--neon-cyan)] mx-4">NFA DYOR</span>
       <span class="text-[var(--neon-orange)]">WAGMI</span>
       <span class="text-[var(--neon-green)] mx-4">AI CAN'T HIDE FROM US</span>
       <span class="text-[var(--neon-pink)]">SEND IT</span>
       <span class="text-[var(--neon-yellow)] mx-4">APE IN</span>
-      <span class="text-[var(--neon-green)]">$ISTHISAI TO THE MOON</span>
+      <span class="text-[var(--neon-green)]">$ISTHATREAL TO THE MOON</span>
       <span class="text-[var(--neon-cyan)] mx-4">EXPOSE THE BOTS</span>
       <span class="text-[var(--neon-orange)]">LFG</span>
     </div>
@@ -102,8 +102,8 @@
     <div class="mb-2 text-sm uppercase tracking-[0.3em] text-[var(--neon-pink)]" style="font-family: var(--font-pixel); font-size: 10px;">
       the ultimate degen tool
     </div>
-    <h1 class="neon-text text-6xl font-bold text-[var(--neon-green)] md:text-8xl" style="font-family: var(--font-comic);">
-      $ISTHISAI
+    <h1 class="neon-text text-5xl font-bold text-[var(--neon-green)] md:text-7xl" style="font-family: var(--font-comic);">
+      Is that real?
     </h1>
     <p class="mt-3 text-xl text-[var(--muted-foreground)]" style="font-family: var(--font-comic);">
       AI can't hide. We expose everything.

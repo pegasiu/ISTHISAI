@@ -177,7 +177,7 @@
   <!-- Hero text -->
   <div class="text-center space-y-3">
     <h2 class="text-5xl font-bold text-[var(--neon-green)] neon-text md:text-6xl" style="font-family: var(--font-comic);">
-      IS THIS AI?
+      IS THAT REAL?
     </h2>
     <p class="text-lg text-[var(--muted-foreground)]" style="font-family: var(--font-comic);">
       drop that sus content and we'll expose the truth
