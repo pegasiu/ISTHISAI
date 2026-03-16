@@ -175,6 +175,10 @@
 	animation: scroll-left 20s linear infinite;
 }
 
+.marquee:hover {
+	animation-play-state: paused;
+}
+
 /* Flicker */
 @keyframes flicker {
 	0%, 100% { opacity: 1; }
