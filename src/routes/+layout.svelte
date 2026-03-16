@@ -34,59 +34,57 @@
 
   <!-- Floating stickers & memes -->
   <div class="pointer-events-none fixed inset-0 z-40 overflow-hidden">
-    <!-- Original stickers -->
+    <!-- Floating memes scattered across entire background -->
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-4 top-1/4 w-24 opacity-70 md:w-32" style="animation: float1 8s ease-in-out infinite;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-24 rounded-lg opacity-60 md:w-32" style="left: 5%; top: 8%; animation: float1 8s ease-in-out infinite;">
       <source src="/memes/sticker.webm" type="video/webm" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute right-4 top-1/3 w-24 opacity-70 md:w-32" style="animation: float2 10s ease-in-out infinite;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-24 rounded-lg opacity-60 md:w-32" style="left: 75%; top: 15%; animation: float2 10s ease-in-out infinite;">
       <source src="/memes/sticker2.webm" type="video/webm" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-8 bottom-1/4 w-20 opacity-60 md:w-28" style="animation: float3 12s ease-in-out infinite;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-20 rounded-lg opacity-50 md:w-28" style="left: 40%; top: 85%; animation: float3 12s ease-in-out infinite;">
       <source src="/memes/sticker3.webm" type="video/webm" />
     </video>
-
-    <!-- Scattered degen memes -->
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute right-2 top-[12%] w-16 rounded-lg opacity-50 md:w-24" style="animation: float2 9s ease-in-out infinite; animation-delay: -2s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-16 rounded-lg opacity-40 md:w-24" style="left: 55%; top: 5%; animation: float2 9s ease-in-out infinite; animation-delay: -2s;">
       <source src="/memes/ai-fruit-ai-apple-fruit.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-2 top-[55%] w-16 rounded-lg opacity-40 md:w-24" style="animation: float3 11s ease-in-out infinite; animation-delay: -4s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-16 rounded-lg opacity-35 md:w-24" style="left: 30%; top: 50%; animation: float3 11s ease-in-out infinite; animation-delay: -4s;">
       <source src="/memes/IMG_2486.MP4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute right-6 top-[60%] w-14 rounded-lg opacity-50 md:w-20" style="animation: float1 13s ease-in-out infinite; animation-delay: -1s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-14 rounded-lg opacity-40 md:w-20" style="left: 85%; top: 55%; animation: float1 13s ease-in-out infinite; animation-delay: -1s;">
       <source src="/memes/unsrscandidate-unsrsmorty.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-6 top-[10%] w-14 rounded-lg opacity-45 md:w-22" style="animation: float2 14s ease-in-out infinite; animation-delay: -6s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-14 rounded-lg opacity-35 md:w-22" style="left: 15%; top: 20%; animation: float2 14s ease-in-out infinite; animation-delay: -6s;">
       <source src="/memes/hamster-capybara.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute right-8 top-[85%] w-16 rounded-lg opacity-50 md:w-24" style="animation: float3 10s ease-in-out infinite; animation-delay: -3s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-16 rounded-lg opacity-40 md:w-24" style="left: 65%; top: 75%; animation: float3 10s ease-in-out infinite; animation-delay: -3s;">
       <source src="/memes/sahur-tung-tung-tung-sahur.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-3 top-[78%] w-14 rounded-lg opacity-40 md:w-20" style="animation: float1 15s ease-in-out infinite; animation-delay: -5s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-14 rounded-lg opacity-35 md:w-20" style="left: 45%; top: 30%; animation: float1 15s ease-in-out infinite; animation-delay: -5s;">
       <source src="/memes/battle-cat-air-cat.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute right-3 top-[42%] w-14 rounded-lg opacity-45 md:w-20" style="animation: float2 12s ease-in-out infinite; animation-delay: -7s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-14 rounded-lg opacity-35 md:w-20" style="left: 20%; top: 65%; animation: float2 12s ease-in-out infinite; animation-delay: -7s;">
       <source src="/memes/ai-fruit.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-5 top-[40%] w-16 rounded-lg opacity-50 md:w-22" style="animation: float3 9s ease-in-out infinite; animation-delay: -2s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-16 rounded-lg opacity-40 md:w-22" style="left: 90%; top: 35%; animation: float3 9s ease-in-out infinite; animation-delay: -2s;">
       <source src="/memes/ai-ai-dog.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute right-6 top-[5%] w-14 rounded-lg opacity-45 md:w-20" style="animation: float1 11s ease-in-out infinite; animation-delay: -8s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-14 rounded-lg opacity-35 md:w-20" style="left: 50%; top: 92%; animation: float1 11s ease-in-out infinite; animation-delay: -8s;">
       <source src="/memes/apple-apple-dog.mp4" type="video/mp4" />
     </video>
     <!-- svelte-ignore a11y_media_has_caption -->
-    <video autoplay loop muted playsinline class="sticker-float absolute left-1 top-[92%] w-16 rounded-lg opacity-50 md:w-24" style="animation: float2 10s ease-in-out infinite; animation-delay: -3s;">
+    <video autoplay loop muted playsinline class="sticker-float absolute w-16 rounded-lg opacity-40 md:w-24" style="left: 10%; top: 90%; animation: float2 10s ease-in-out infinite; animation-delay: -3s;">
       <source src="/memes/will-smith-eating-spaghetti-will-smith.mp4" type="video/mp4" />
     </video>
   </div>
